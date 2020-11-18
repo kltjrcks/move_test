@@ -2,6 +2,7 @@
 import java.io.InputStreamReader;
 import java.io.BufferedReader;
 import java.io.IOException;
+import static java.lang.Math.sqrt;
 
 public class Main {	
 	
@@ -27,7 +28,7 @@ public class Main {
 				else
 				{
 					int num = Integer.parseInt(array[i]);
-					for(int x=2; x<=num; x++)
+					for(int x=2; x<=Math.sqrt(num); x++)
 					{
 						if(num % x ==0)
 						{
