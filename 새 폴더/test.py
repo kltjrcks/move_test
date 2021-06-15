@@ -1,7 +1,12 @@
-import sys
+# -*- coding : utf-8 -*-
 
-input = int(sys.stdin.readline().split()[0])
-print(input)
+import pyautogui  as pag
 
-for i in range(input):
-    print(i)
+x, y = pag.position()
+print("x :{}, y:{}".format(x, y))
+pag.move()
+
+
+
+
+
